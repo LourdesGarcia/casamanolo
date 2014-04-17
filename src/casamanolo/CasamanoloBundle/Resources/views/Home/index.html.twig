@@ -1,1 +1,50 @@
-hola holaaa
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <title>Casa Manolo</title>
+    <link rel="stylesheet" type="text/css" title="default" href= "{{ asset('css/BlancoSobreNegro.css') }}" media="screen" id='estilo'>
+</head>
+<body>
+<div id="CabeceraNL">
+    <img src="{{ asset('img/Titulo.jpg') }}" alt="Titulo" name="imagencabecera">
+</div>
+<div id="Menu">
+    <p>
+        <a href="index.php">Inicio</a>
+        &nbsp; &nbsp; <a href= "#">Como Llegar</a>
+        &nbsp; &nbsp; <a href= "#">Referencias y Premios</a>
+        &nbsp; &nbsp; <a href= "#">Fotos</a>
+    </p>
+</div>
+<div id="ZonaPrincipal">
+    <div id="ImagenIncrustada">
+        <img src="{{ asset('img/casa_manolo_interior.jpg') }}" alt= "Imagen_interor">
+    </div>
+    <div id="Texto">
+        <p>
+            Casa Manolo es un restaurante situado en un
+            marco incomparable dentro del casco antiguo de
+            Santiago de Compostela, mundialmente conocido entre
+            los peregrinos que llegan a la ciudad, su comida
+            tradicional gallega a buen precio le ha hecho
+            famoso como para ser seleccionado en multiples
+            guias como un lugar de necesario paso en el camino.
+        </p>
+        <p>
+            Sus muchos a&ntilde;os de experiencia pasando de
+            padres a hijos de amigos y compa&ntilde;ero que
+            pasan por alli a&ntilde;o tras a&ntilde;o, dejando
+            huella entre sus visitantes, haciendo que cada
+            nuevo peregrino se sienta como en su casa.
+        </p>
+    </div>
+</div>
+<div id="Base">
+    <img src="{{ asset('img/BasePequena.jpg') }}" alt= "Base" name="imagenbase">
+    <p>
+        <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido"></a>
+    </p>
+</div>
+</body>
+</html>
