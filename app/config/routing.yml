@@ -1,0 +1,6 @@
+casamanolo:
+    resource: "@CasamanoloBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+

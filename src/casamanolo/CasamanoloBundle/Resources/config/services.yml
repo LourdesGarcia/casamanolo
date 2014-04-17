@@ -1,0 +1,7 @@
+parameters:
+#    casamanolo.example.class: casamanolo\CasamanoloBundle\Example
+
+services:
+#    casamanolo.example:
+#        class: %casamanolo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
