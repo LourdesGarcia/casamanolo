@@ -404,3 +404,17 @@ text-align: center;
   background-color: #000;
   color: #0f0;
 }
+
+#photosContainer li{
+     list-style-type: none;
+     float: left;
+     border: 1px solid;
+     width: 222px;
+     height: 148px;
+ }
+
+#photosContainer li a{
+   margin: 0 auto;
+   line-height: 0.5em;
+   vertical-align: middle;
+}
