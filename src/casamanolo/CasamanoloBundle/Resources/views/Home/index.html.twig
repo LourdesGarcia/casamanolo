@@ -45,22 +45,15 @@
     <div id="direccionContainer" class="infoContainer">
         <br>
         <br>
-        <div id="Centrado">
-            <IFRAME src="http://maps.google.es/maps?f=l&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295&amp;output=embed" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" >
-                Error en carga de mapa
-            </IFRAME>
-
-            <br>
-            <small>
-                <a href="http://maps.google.es/maps?f=l&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left"></a>
-            </small>
+        <div class="Centrado">
+            {#<iframe src="http://maps.google.es/maps?f=l&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295&amp;output=embed" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>#}
         </div>
         <br>
         <br>
     </div>
     <div id="premiosContainer" class="infoContainer">
         <div id="LinksNoMenu">
-            <div id="Centrado">
+            <div class="Centrado">
                 <h2>Premios</h2>
                 <h3>El restaurante casa manolo posee varios premios
                     de arquitectura por su dise&ntilde;o inovador y por
@@ -80,7 +73,7 @@
         </div>
     </div>
     <div id="fotosContainer" class="infoContainer">
-        <div id="Centrado">
+        <div class="Centrado">
             <table border=1>
                 <tr>
                     <td>
@@ -109,7 +102,7 @@
                         <a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local4b.png') }}" target="_blank"><img src="{{ asset('img/local/Local4.png') }}" name="Local4" alt="Local4"></a>
                     </td>
                     <td>
-                        <div id="Centrado">
+                        <div class="Centrado">
                             <a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local5b.png') }}" target="_blank"><img src="{{ asset('img/local/Local5.png') }}" name="Local5" alt="Local5"></a>
                         </div>
                     </td>
