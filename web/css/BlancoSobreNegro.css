@@ -406,15 +406,18 @@ text-align: center;
 }
 
 #photosContainer li{
-     list-style-type: none;
-     float: left;
-     border: 1px solid;
-     width: 222px;
-     height: 148px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid;
+    width: 222px;
+    height: 148px;
+    position: relative;
+    display: table;
  }
 
 #photosContainer li a{
-   margin: 0 auto;
-   line-height: 0.5em;
-   vertical-align: middle;
+    /*line-height: 0.5em;*/
+    vertical-align: middle;
+    margin: 0px auto;
+    display: table-cell;
 }
