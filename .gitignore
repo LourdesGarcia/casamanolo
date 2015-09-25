@@ -1,5 +1,8 @@
 /web/bundles/
 /app/bootstrap.php.cache
+/app/check.php.cache
+/app/bootstrap.php
+/app/SymfonyRequirements.php
 /app/cache/*
 /app/config/parameters.yml
 /app/logs/*
@@ -9,4 +12,6 @@
 /vendor/
 /bin/
 /composer.phar
+/composer.lock
 /.idea
+/web/config.php
