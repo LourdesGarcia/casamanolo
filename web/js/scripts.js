@@ -1,6 +1,7 @@
 function init(){
     $('.infoContainer').hide();
     $('#homeContainer').fadeIn(1500);
+    $("#photosContainer li a").fancybox();
 }
 
 $(document).ready(function(){
