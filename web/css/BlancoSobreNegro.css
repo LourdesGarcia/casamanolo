@@ -31,24 +31,6 @@ html, body{
     margin-right: 5em;
 }
 
-@media only screen and (max-width: 1024px) {
-
-    #CabeceraNL {
-        width:  auto;
-    }
-
-    #tituloImg{
-        margin-right: 0;
-        height: 204px;
-        margin-bottom: 10px;
-    }
-
-    #peregrinosImg{
-        width: 100%;
-    }
-}
-
-
 .menuButton{
     color: #000000;
     text-decoration: none;
@@ -143,6 +125,10 @@ input.bntmi
     margin-top: 100px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+#Base img{
+    width: 100%;
 }
 
 #LinksNoMenu {
@@ -445,4 +431,32 @@ input.bntmi
 }
 
 
+
+
+@media only screen and (max-width: 40.063em) {
+
+    #CabeceraNL {
+        width:  auto;
+    }
+
+    #tituloImg{
+        margin-right: 0;
+        height: 204px;
+        margin-bottom: 10px;
+    }
+
+    #peregrinosImg{
+        width: 100%;
+    }
+
+    #ImagenIncrustada img {
+        width: 100%;
+        min-width: 12em;
+    }
+
+    #Base{
+        width: auto;
+    }
+
+}
 
