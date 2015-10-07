@@ -10,9 +10,140 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox-buttons.css') }}" /></head>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.fancybox-thumbs.css') }}" />
 <body>
-<div class="wrapper">
+<h1 class="visually-hidden">Casa Manolo</h1>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+
+        <nav class="tab-bar main-tab-bar">
+
+            <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" href="#manin-menu-nav"><span><span class="visually-hidden">Menu</span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <div id="CabeceraNL">
+                    {#<img src="{{ asset('img/Titulo.jpg') }}" alt="Titulo" name="imagencabecera">#}
+                    <img id="tituloImg" src="{{ asset('img/titulo_recortado.png') }}" alt="Titulo" name="imagencabeceratitulo">
+                    <img id="peregrinosImg" src="{{ asset('img/peregrinos.png') }}" alt="Titulo" name="imagencabeceraperegrinos">
+                </div>
+                {#<a href="#" title="LG Promociones: Ir a la sección Inicio"><img src="{{ asset('bundles/web/img/logoLG.svg') }}" alt="LG Life's Good"/><span class="visually-hidden">Ir a la sección Inicio</span></a>#}
+            </section>
+
+        </nav>
+        <form action="" class="right-off-canvas-menu main-menu row">
+            <p class="visually-hidden">La página se recargara automáticamente al seleccionar un campo de filtro</p>
+
+            <div class="off-canvas-list" id="manin-menu-nav">
+
+                <ul class="main-menu-main">
+                    <li class="logo show-for-large-up">
+                        <div id="CabeceraNL">
+                            {#<img src="{{ asset('img/Titulo.jpg') }}" alt="Titulo" name="imagencabecera">#}
+                            <img id="tituloImg" src="{{ asset('img/titulo_recortado.png') }}" alt="Titulo" name="imagencabeceratitulo">
+                            <img id="peregrinosImg" src="{{ asset('img/peregrinos.png') }}" alt="Titulo" name="imagencabeceraperegrinos">
+                        </div>
+                    </li>
+                    <li class="home menuButton">
+                        <a id="home" href="#" class="activeButton">Inicio</a>
+                    </li>
+
+                    <li class="direccion menuButton">
+                        <a id="direccion" href= "#">Como Llegar</a>
+                    </li>
+
+                    <li class="premios menuButton">
+                        <a id="premios" href= "#">Referencias y Premios</a>
+                    </li>
+
+                    <li class="fotos menuButton">
+                        <a id="fotos" href= "#">Fotos</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </form>
+        <div id="ZonaPrincipal">
+            <div id="homeContainer" class="infoContainer">
+                <div id="ImagenIncrustada">
+                    <img src="{{ asset('img/casa_manolo_interior.jpg') }}" alt= "Imagen_interor">
+                </div>
+                <div id="Texto">
+                    <p>
+                        Casa Manolo es un restaurante situado en un
+                        marco incomparable dentro del casco antiguo de
+                        Santiago de Compostela, mundialmente conocido entre
+                        los peregrinos que llegan a la ciudad, su comida
+                        tradicional gallega a buen precio le ha hecho
+                        famoso como para ser seleccionado en multiples
+                        guias como un lugar de necesario paso en el camino.
+                    </p>
+                    <p>
+                        Sus muchos a&ntilde;os de experiencia pasando de
+                        padres a hijos de amigos y compa&ntilde;ero que
+                        pasan por alli a&ntilde;o tras a&ntilde;o, dejando
+                        huella entre sus visitantes, haciendo que cada
+                        nuevo peregrino se sienta como en su casa.
+                    </p>
+                </div>
+            </div>
+            <div id="direccionContainer" class="infoContainer">
+                <br>
+                <br>
+                <div class="Centrado">
+                    &#123;&#35;<iframe src="http://maps.google.es/maps?f=l&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295&amp;output=embed" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>&#35;&#125;
+                </div>
+                <br>
+                <br>
+            </div>
+            <div id="premiosContainer" class="infoContainer">
+                <div id="LinksNoMenu">
+                    <div class="Centrado">
+                        <h2>Premios</h2>
+                        <h3>El restaurante Casa Manolo posee varios premios
+                            de arquitectura por su dise&ntilde;o inovador y por
+                            la rehabilitacion de el edificio en el que esta
+                            construido</h3>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="fotosContainer" class="infoContainer">
+                <div class="Centrado">
+                    <ul id="photosContainer">
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Folleto1b.png') }}" target="_blank"><img src="{{ asset('img/local/Folleto1.png') }}" name="Folleto1" alt="Folleto1"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Folleto2b.png') }}" target="_blank"><img src="{{ asset('img/local/Folleto2.png') }}" name="Folleto2" alt="Folleto2"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Folleto3b.png') }}" target="_blank"><img src="{{ asset('img/local/Folleto3.png') }}" name="Folleto3" alt="Folleto3"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local1b.png') }}" target="_blank"><img src="{{ asset('img/local/Local1.png') }}" name="Local1" alt="Local1"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local2b.png') }}" target="_blank"><img src="{{ asset('img/local/Local2.png') }}" name="Local2" alt="Local2"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local3b.png') }}" target="_blank"><img src="{{ asset('img/local/Local3.png') }}" name="Local3" alt="Local3"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local4b.png') }}" target="_blank"><img src="{{ asset('img/local/Local4.png') }}" name="Local4" alt="Local4"></a></li>
+                        <li><a href="{{ app.request.getSchemeAndHttpHost() }}{{ asset('img/local/Local5b.png') }}" target="_blank"><img src="{{ asset('img/local/Local5.png') }}" name="Local5" alt="Local5"></a></li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="Base">
+            <img src="{{ asset('img/BasePequena.jpg') }}" alt= "Base" name="imagenbase">
+            <p>
+                <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido"></a>
+            </p>
+        </div>
+
+        <a href="#" class="exit-off-canvas"><span class="visually-hidden">Cerrar menú y volver al contenido principal</span></a>
+
+    </div>
+</div>
+{#<div class="wrapper">
     <div id="CabeceraNL">
-        {#<img src="{{ asset('img/Titulo.jpg') }}" alt="Titulo" name="imagencabecera">#}
+        &#123;&#35;<img src="{{ asset('img/Titulo.jpg') }}" alt="Titulo" name="imagencabecera">&#35;&#125;
         <img id="tituloImg" src="{{ asset('img/titulo_recortado.png') }}" alt="Titulo" name="imagencabeceratitulo">
         <img id="peregrinosImg" src="{{ asset('img/peregrinos.png') }}" alt="Titulo" name="imagencabeceraperegrinos">
     </div>
@@ -52,7 +183,7 @@
             <br>
             <br>
             <div class="Centrado">
-                {#<iframe src="http://maps.google.es/maps?f=l&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295&amp;output=embed" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>#}
+                &#123;&#35;<iframe src="http://maps.google.es/maps?f=l&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=casa+manolo&amp;sll=42.882022,-8.543689&amp;sspn=0.002296,0.005654&amp;ie=UTF8&amp;near=&amp;split=1&amp;ei=gwvdSdmJLozS2wKinbmYCQ&amp;attrid=&amp;sig2=lVRWE6LiJrMoYEPuspxpMA&amp;cd=1&amp;cid=42881130,-8542497,13005694202227844341&amp;li=lmd&amp;t=h&amp;ll=42.88113,-8.542497&amp;spn=0.006295,0.006295&amp;output=embed" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>&#35;&#125;
             </div>
             <br>
             <br>
@@ -95,7 +226,7 @@
             <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido"></a>
         </p>
     </div>
-</div>
+</div>#}
 <script src="{{ asset('js/jquery-1.11.0.js') }}"></script>
 <script src="{{ asset('js/scripts.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.mousewheel-3.0.6.pack.js') }}"></script>
@@ -104,5 +235,7 @@
 <script type="text/javascript" src="{{ asset('js/jquery.fancybox-buttons.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.fancybox-thumbs.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.fancybox-media.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/foundation.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/foundation.offcanvas.js') }}"></script>
 </body>
 </html>
